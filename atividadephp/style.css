@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Fundo aesthetic */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+/* Container central */
+body > * {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Títulos */
+h2 {
+    margin-bottom: 20px;
+    color: #6a5acd;
+    font-weight: 600;
+}
+
+/* Labels */
+label {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Select */
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+select:focus {
+    border-color: #a6c1ee;
+    box-shadow: 0 0 0 3px rgba(166,193,238,0.3);
+}
+
+/* Botão */
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #a6c1ee, #fbc2eb);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #6a5acd;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #483d8b;
+}
+
+/* Mensagens */
+p {
+    margin-top: 15px;
+    font-size: 0.95rem;
+}

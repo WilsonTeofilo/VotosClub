@@ -1,35 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Testando se o cookie foi definido</title>
+    <meta charset="utf-8">
+    <title>Status do Cookie</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<?php
 
+<div class="container">
+    <?php
+    if (isset($_COOKIE['voto'])) {
+        echo "<p>Você já votou!<br>Voto registrado: <strong>{$_COOKIE['voto']}</strong></p>";
+    } else {
+        echo "<p>Você ainda não votou.</p>";
+    }
+    ?>
+    <a href="index.php">Voltar</a>
+</div>
 
-
-if (isset($_COOKIE['Pedro'])){
-
-echo "Bem vindo " .$_COOKIE["Pedro"] . "! <br>";
-
-}
-else{
-
-	echo "usuario novo seja bem vindo!<br>";
-}
-
-
-
-
-
-
-
-
-
-
-
-  ?>
 </body>
 </html>
